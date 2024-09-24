@@ -6,7 +6,14 @@ const schema = require("./schema/schema");
 
 const port = process.env.PORT || 5000;
 
+
+
 const app = express();
+
+
+app.get( "/", (reg, res) => {
+res.json({message : "Hello from the backend"})
+})
 
 // connect to database
 connectDB();
