@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-const { clients } = require("../sampeData");
 
 const ProjectSchema = new mongoose.Schema({
   name: {
